@@ -1,0 +1,30 @@
+{
+    "meta": {
+        "generator": "scripts/php-vectors.php",
+        "phpVersion": "8.4.27",
+        "phpClientVersion": "ca2f10ae70e399d8473a3de72109e25dcadd91a0"
+    },
+    "oidcToken": "eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJwYWNrYWdpc3QuY29tIn0=.c2ln",
+    "vectors": [
+        {
+            "method": "GET",
+            "url": "https://packagist.com/api/oidc/audience/acme-org",
+            "authorization": ""
+        },
+        {
+            "method": "GET",
+            "url": "https://pipelines.actions.example/idtoken?api-version=2.0&audience=https://packagist.com/oidc/acme-org",
+            "authorization": "Bearer gh-request-token"
+        },
+        {
+            "method": "POST",
+            "url": "https://packagist.com/api/oidc/token-exchange/acme-org/acme%2Fpackage",
+            "authorization": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJwYWNrYWdpc3QuY29tIn0=.c2ln"
+        },
+        {
+            "method": "POST",
+            "url": "https://packagist.com/api/packages/acme%2Fpackage/artifacts/",
+            "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_exchanged, Timestamp=1794522916, Cnonce=3d79bab9812ceecad5da71ceccad2fb30ae6199c, Version=2, Signature=voqviXh1Of6KYoqRFp3Y9RXffHw+GMjFT4w8Ujsd05s="
+        }
+    ]
+}

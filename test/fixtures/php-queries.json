@@ -1,0 +1,345 @@
+{
+    "meta": {
+        "generator": "scripts/php-vectors.php",
+        "phpVersion": "8.4.27",
+        "phpClientVersion": "ca2f10ae70e399d8473a3de72109e25dcadd91a0"
+    },
+    "vectors": [
+        {
+            "query": "",
+            "canonical": ""
+        },
+        {
+            "query": "a=1",
+            "canonical": "a=1"
+        },
+        {
+            "query": "b=2&a=1",
+            "canonical": "a=1&b=2"
+        },
+        {
+            "query": "a",
+            "canonical": "a="
+        },
+        {
+            "query": "a=",
+            "canonical": "a="
+        },
+        {
+            "query": "a=&b",
+            "canonical": "a=&b="
+        },
+        {
+            "query": "&&a=1&&",
+            "canonical": "a=1"
+        },
+        {
+            "query": "=1",
+            "canonical": ""
+        },
+        {
+            "query": "=",
+            "canonical": ""
+        },
+        {
+            "query": "a=1&=2",
+            "canonical": "a=1"
+        },
+        {
+            "query": "a+b=1",
+            "canonical": "a_b=1"
+        },
+        {
+            "query": "a%20b=1",
+            "canonical": "a_b=1"
+        },
+        {
+            "query": "a.b=1",
+            "canonical": "a_b=1"
+        },
+        {
+            "query": "a..b=1",
+            "canonical": "a__b=1"
+        },
+        {
+            "query": " a=1",
+            "canonical": "a=1"
+        },
+        {
+            "query": "  a=1",
+            "canonical": "a=1"
+        },
+        {
+            "query": "a =1",
+            "canonical": "a_=1"
+        },
+        {
+            "query": ".a=1",
+            "canonical": "_a=1"
+        },
+        {
+            "query": "a%2Eb=1",
+            "canonical": "a_b=1"
+        },
+        {
+            "query": "a=hello+world",
+            "canonical": "a=hello%20world"
+        },
+        {
+            "query": "a=hello%20world",
+            "canonical": "a=hello%20world"
+        },
+        {
+            "query": "a=%2B",
+            "canonical": "a=%2B"
+        },
+        {
+            "query": "a=+",
+            "canonical": "a=%20"
+        },
+        {
+            "query": "a=%7E",
+            "canonical": "a=~"
+        },
+        {
+            "query": "a=~",
+            "canonical": "a=~"
+        },
+        {
+            "query": "a=%41",
+            "canonical": "a=A"
+        },
+        {
+            "query": "a=!*'()",
+            "canonical": "a=%21%2A%27%28%29"
+        },
+        {
+            "query": "a=%21%2A%27%28%29",
+            "canonical": "a=%21%2A%27%28%29"
+        },
+        {
+            "query": "a=%E2%9C%93",
+            "canonical": "a=%E2%9C%93"
+        },
+        {
+            "query": "a=%C3%A9",
+            "canonical": "a=%C3%A9"
+        },
+        {
+            "query": "a=%F0%9F%98%80",
+            "canonical": "a=%F0%9F%98%80"
+        },
+        {
+            "query": "a=%ZZ",
+            "canonical": "a=%25ZZ"
+        },
+        {
+            "query": "a=%2",
+            "canonical": "a=%252"
+        },
+        {
+            "query": "a=%",
+            "canonical": "a=%25"
+        },
+        {
+            "query": "a=100%",
+            "canonical": "a=100%25"
+        },
+        {
+            "query": "a=%e2%9c%93",
+            "canonical": "a=%E2%9C%93"
+        },
+        {
+            "query": "a=%3d%3D",
+            "canonical": "a=%3D%3D"
+        },
+        {
+            "query": "a=1&a=2",
+            "canonical": "a=2"
+        },
+        {
+            "query": "a=1&A=2",
+            "canonical": "A=2&a=1"
+        },
+        {
+            "query": "B=1&a=2&A=3&b=4",
+            "canonical": "A=3&B=1&a=2&b=4"
+        },
+        {
+            "query": "_=1&-=2&.=3&~=4",
+            "canonical": "-=2&_=3&~=4"
+        },
+        {
+            "query": "0=a&1=b&10=c&9=d",
+            "canonical": "0=a&1=b&10=c&9=d"
+        },
+        {
+            "query": "01=a&1=b",
+            "canonical": "01=a&1=b"
+        },
+        {
+            "query": "-1=a&1=b",
+            "canonical": "-1=a&1=b"
+        },
+        {
+            "query": "a[]=1",
+            "canonical": "a%5B0%5D=1"
+        },
+        {
+            "query": "a[]=1&a[]=2&a[]=3",
+            "canonical": "a%5B0%5D=1&a%5B1%5D=2&a%5B2%5D=3"
+        },
+        {
+            "query": "a[x]=1&a[y]=2",
+            "canonical": "a%5Bx%5D=1&a%5By%5D=2"
+        },
+        {
+            "query": "a[y]=1&a[x]=2",
+            "canonical": "a%5By%5D=1&a%5Bx%5D=2"
+        },
+        {
+            "query": "a[x][y]=1",
+            "canonical": "a%5Bx%5D%5By%5D=1"
+        },
+        {
+            "query": "a[x][]=1&a[x][]=2",
+            "canonical": "a%5Bx%5D%5B0%5D=1&a%5Bx%5D%5B1%5D=2"
+        },
+        {
+            "query": "a[5]=x&a[]=y",
+            "canonical": "a%5B5%5D=x&a%5B6%5D=y"
+        },
+        {
+            "query": "a[01]=x&a[1]=y",
+            "canonical": "a%5B01%5D=x&a%5B1%5D=y"
+        },
+        {
+            "query": "a[-1]=x&a[]=y",
+            "canonical": "a%5B-1%5D=x&a%5B0%5D=y"
+        },
+        {
+            "query": "a[]=1&a=2",
+            "canonical": "a=2"
+        },
+        {
+            "query": "a=1&a[]=2",
+            "canonical": "a%5B0%5D=2"
+        },
+        {
+            "query": "a[x]=1&a[x]=2",
+            "canonical": "a%5Bx%5D=2"
+        },
+        {
+            "query": "a[=1",
+            "canonical": "a_=1"
+        },
+        {
+            "query": "a]=1",
+            "canonical": "a%5D=1"
+        },
+        {
+            "query": "a[b=1",
+            "canonical": "a_b=1"
+        },
+        {
+            "query": "a[b]c=1",
+            "canonical": "a%5Bb%5D=1"
+        },
+        {
+            "query": "a[b]]=1",
+            "canonical": "a%5Bb%5D=1"
+        },
+        {
+            "query": "a[[b]=1",
+            "canonical": "a%5B%5Bb%5D=1"
+        },
+        {
+            "query": "a[b][c=1",
+            "canonical": "a%5Bb%5D=1"
+        },
+        {
+            "query": "a[ b ]=1",
+            "canonical": "a%5B%20b%20%5D=1"
+        },
+        {
+            "query": "a[b.c]=1",
+            "canonical": "a%5Bb.c%5D=1"
+        },
+        {
+            "query": "a.b[c.d]=1",
+            "canonical": "a_b%5Bc.d%5D=1"
+        },
+        {
+            "query": "a%5B%5D=1&a%5B%5D=2",
+            "canonical": "a%5B0%5D=1&a%5B1%5D=2"
+        },
+        {
+            "query": "a%5Bx%5D=1",
+            "canonical": "a%5Bx%5D=1"
+        },
+        {
+            "query": "[a]=1",
+            "canonical": ""
+        },
+        {
+            "query": "[]=1",
+            "canonical": ""
+        },
+        {
+            "query": "a[]",
+            "canonical": "a%5B0%5D="
+        },
+        {
+            "query": "a[x]",
+            "canonical": "a%5Bx%5D="
+        },
+        {
+            "query": "key=evil&version=1",
+            "canonical": "key=evil&version=1"
+        },
+        {
+            "query": "limit=500&page=2&origin=private",
+            "canonical": "limit=500&origin=private&page=2"
+        },
+        {
+            "query": "security-issue-state=open&limit=500",
+            "canonical": "limit=500&security-issue-state=open"
+        },
+        {
+            "query": "redirect=https%3A%2F%2Fexample.com%2F%3Fx%3D1%26y%3D2",
+            "canonical": "redirect=https%3A%2F%2Fexample.com%2F%3Fx%3D1%26y%3D2"
+        },
+        {
+            "query": "q=a%26b%3Dc",
+            "canonical": "q=a%26b%3Dc"
+        },
+        {
+            "query": "q=%00",
+            "canonical": "q=%00"
+        },
+        {
+            "query": "q=%0A%0D%09",
+            "canonical": "q=%0A%0D%09"
+        },
+        {
+            "query": "a=1;b=2",
+            "canonical": "a=1%3Bb%3D2"
+        },
+        {
+            "query": "a=1#frag",
+            "canonical": "a=1%23frag"
+        },
+        {
+            "query": "a[b][c][d][e]=deep",
+            "canonical": "a%5Bb%5D%5Bc%5D%5Bd%5D%5Be%5D=deep"
+        },
+        {
+            "query": "x[]=1&y=2&x[]=3",
+            "canonical": "x%5B0%5D=1&x%5B1%5D=3&y=2"
+        },
+        {
+            "query": "a=%2520",
+            "canonical": "a=%2520"
+        }
+    ]
+}

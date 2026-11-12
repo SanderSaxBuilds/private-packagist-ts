@@ -1,0 +1,433 @@
+{
+    "meta": {
+        "generator": "scripts/php-vectors.php",
+        "phpVersion": "8.4.27",
+        "phpClientVersion": "ca2f10ae70e399d8473a3de72109e25dcadd91a0"
+    },
+    "httpBuildQuery": [
+        {
+            "input": {
+                "limit": 500
+            },
+            "rfc1738": "limit=500",
+            "rfc3986": "limit=500"
+        },
+        {
+            "input": {
+                "limit": 500,
+                "origin": "private"
+            },
+            "rfc1738": "limit=500&origin=private",
+            "rfc3986": "limit=500&origin=private"
+        },
+        {
+            "input": {
+                "origin": "private",
+                "security-issue-state": "open",
+                "limit": 10
+            },
+            "rfc1738": "origin=private&security-issue-state=open&limit=10",
+            "rfc3986": "origin=private&security-issue-state=open&limit=10"
+        },
+        {
+            "input": {
+                "q": "hello world",
+                "tilde": "~",
+                "star": "*",
+                "plus": "+"
+            },
+            "rfc1738": "q=hello+world&tilde=%7E&star=%2A&plus=%2B",
+            "rfc3986": "q=hello%20world&tilde=~&star=%2A&plus=%2B"
+        },
+        {
+            "input": {
+                "bool-true": true,
+                "bool-false": false,
+                "null": null,
+                "zero": 0,
+                "empty": ""
+            },
+            "rfc1738": "bool-true=1&bool-false=0&zero=0&empty=",
+            "rfc3986": "bool-true=1&bool-false=0&zero=0&empty="
+        },
+        {
+            "input": {
+                "list": [
+                    "a",
+                    "b"
+                ],
+                "map": {
+                    "x": 1,
+                    "y": {
+                        "z": 2
+                    }
+                }
+            },
+            "rfc1738": "list%5B0%5D=a&list%5B1%5D=b&map%5Bx%5D=1&map%5By%5D%5Bz%5D=2",
+            "rfc3986": "list%5B0%5D=a&list%5B1%5D=b&map%5Bx%5D=1&map%5By%5D%5Bz%5D=2"
+        },
+        {
+            "input": {
+                "unicode": "café ✓",
+                "emoji": "😀"
+            },
+            "rfc1738": "unicode=caf%C3%A9+%E2%9C%93&emoji=%F0%9F%98%80",
+            "rfc3986": "unicode=caf%C3%A9%20%E2%9C%93&emoji=%F0%9F%98%80"
+        },
+        {
+            "input": {
+                "reserved": "!#$&'()*+,/:;=?@[]"
+            },
+            "rfc1738": "reserved=%21%23%24%26%27%28%29%2A%2B%2C%2F%3A%3B%3D%3F%40%5B%5D",
+            "rfc3986": "reserved=%21%23%24%26%27%28%29%2A%2B%2C%2F%3A%3B%3D%3F%40%5B%5D"
+        },
+        {
+            "input": {
+                "nested-empty": [],
+                "after": "x"
+            },
+            "rfc1738": "after=x",
+            "rfc3986": "after=x"
+        }
+    ],
+    "jsonEncode": [
+        {
+            "input": {
+                "name": "Acme"
+            },
+            "output": "{\"name\":\"Acme\"}"
+        },
+        {
+            "input": {
+                "url": "https://github.com/acme/website",
+                "path": "/a/b/"
+            },
+            "output": "{\"url\":\"https:\\/\\/github.com\\/acme\\/website\",\"path\":\"\\/a\\/b\\/\"}"
+        },
+        {
+            "input": {
+                "unicode": "café ✓ 中文",
+                "emoji": "😀"
+            },
+            "output": "{\"unicode\":\"caf\\u00e9 \\u2713 \\u4e2d\\u6587\",\"emoji\":\"\\ud83d\\ude00\"}"
+        },
+        {
+            "input": {
+                "quote": "say \"hi\"",
+                "backslash": "C:\\path",
+                "control": "a\nb\tc\rd\be\ff\u0001"
+            },
+            "output": "{\"quote\":\"say \\\"hi\\\"\",\"backslash\":\"C:\\\\path\",\"control\":\"a\\nb\\tc\\rd\\be\\ff\\u0001\"}"
+        },
+        {
+            "input": {
+                "null": null,
+                "true": true,
+                "false": false,
+                "int": 42,
+                "negative": -7,
+                "float": 1.5
+            },
+            "output": "{\"null\":null,\"true\":true,\"false\":false,\"int\":42,\"negative\":-7,\"float\":1.5}"
+        },
+        {
+            "input": {
+                "list": [
+                    1,
+                    2,
+                    3
+                ],
+                "emptyList": [],
+                "nested": {
+                    "a": {
+                        "b": {
+                            "c": "d"
+                        }
+                    }
+                }
+            },
+            "output": "{\"list\":[1,2,3],\"emptyList\":[],\"nested\":{\"a\":{\"b\":{\"c\":\"d\"}}}}"
+        },
+        {
+            "input": [
+                {
+                    "name": "acme/package",
+                    "versionConstraint": "^1.0 | ^2.0",
+                    "expirationDate": "2027-01-01T00:00:00+00:00"
+                }
+            ],
+            "output": "[{\"name\":\"acme\\/package\",\"versionConstraint\":\"^1.0 | ^2.0\",\"expirationDate\":\"2027-01-01T00:00:00+00:00\"}]"
+        },
+        {
+            "input": {
+                "html": "<script>&amp;'</script>"
+            },
+            "output": "{\"html\":\"<script>&amp;'<\\/script>\"}"
+        },
+        {
+            "input": {
+                "separators": "\u2028\u2029"
+            },
+            "output": "{\"separators\":\"\\u2028\\u2029\"}"
+        },
+        {
+            "input": {
+                "repoConfig": "{\"type\":\"package\",\"package\":{\"name\":\"acme\\/x\",\"version\":\"1.0.0\",\"dist\":{\"url\":\"https:\\/\\/example.com\\/x.zip\",\"type\":\"zip\"}}}"
+            },
+            "output": "{\"repoConfig\":\"{\\\"type\\\":\\\"package\\\",\\\"package\\\":{\\\"name\\\":\\\"acme\\\\\\/x\\\",\\\"version\\\":\\\"1.0.0\\\",\\\"dist\\\":{\\\"url\\\":\\\"https:\\\\\\/\\\\\\/example.com\\\\\\/x.zip\\\",\\\"type\\\":\\\"zip\\\"}}}\"}"
+        }
+    ],
+    "rawurlencode": [
+        {
+            "input": "acme/package",
+            "output": "acme%2Fpackage"
+        },
+        {
+            "input": "a b",
+            "output": "a%20b"
+        },
+        {
+            "input": "a+b",
+            "output": "a%2Bb"
+        },
+        {
+            "input": "~user",
+            "output": "~user"
+        },
+        {
+            "input": "!*'()",
+            "output": "%21%2A%27%28%29"
+        },
+        {
+            "input": "#",
+            "output": "%23"
+        },
+        {
+            "input": "?limit=1",
+            "output": "%3Flimit%3D1"
+        },
+        {
+            "input": "..x",
+            "output": "..x"
+        },
+        {
+            "input": "100%",
+            "output": "100%25"
+        },
+        {
+            "input": "café",
+            "output": "caf%C3%A9"
+        },
+        {
+            "input": "😀",
+            "output": "%F0%9F%98%80"
+        },
+        {
+            "input": "A-Z_a.z~0",
+            "output": "A-Z_a.z~0"
+        },
+        {
+            "input": "42",
+            "output": "42"
+        },
+        {
+            "input": "%2F",
+            "output": "%252F"
+        }
+    ],
+    "requestPath": [
+        {
+            "template": "/customers/%s/",
+            "args": [
+                "acme"
+            ],
+            "output": "/customers/acme/"
+        },
+        {
+            "template": "/customers/%s/packages/%s/",
+            "args": [
+                42,
+                "acme/website"
+            ],
+            "output": "/customers/42/packages/acme%2Fwebsite/"
+        },
+        {
+            "template": "/packages/%s/",
+            "args": [
+                "?limit=1"
+            ],
+            "output": "/packages/%3Flimit%3D1/"
+        },
+        {
+            "template": "/packages/%s/",
+            "args": [
+                "#"
+            ],
+            "output": "/packages/%23/"
+        },
+        {
+            "template": "/packages/%s/",
+            "args": [
+                "a/../b"
+            ],
+            "output": "/packages/a%2F..%2Fb/"
+        },
+        {
+            "template": "/vendor-bundles/%s/packages/%s/",
+            "args": [
+                7,
+                "vendor/name with space"
+            ],
+            "output": "/vendor-bundles/7/packages/vendor%2Fname%20with%20space/"
+        },
+        {
+            "template": "/packages/%s/",
+            "args": [
+                ""
+            ],
+            "error": "Path arguments must not be empty, '.', or '..'."
+        },
+        {
+            "template": "/packages/%s/",
+            "args": [
+                "."
+            ],
+            "error": "Path arguments must not be empty, '.', or '..'."
+        },
+        {
+            "template": "/packages/%s/",
+            "args": [
+                ".."
+            ],
+            "error": "Path arguments must not be empty, '.', or '..'."
+        }
+    ],
+    "webhooks": [
+        {
+            "secret": "test",
+            "payload": "payload",
+            "signature": "sha1=b92a2ae52a340f2246a0ec24d45bb4ecfdf7b8ac",
+            "valid": true
+        },
+        {
+            "secret": "webhook-secret",
+            "payload": "{\"type\":\"package.updated\",\"package\":{\"name\":\"acme\\/package\"}}",
+            "signature": "sha1=ebfbbced099872d43b5d29825d14d73ddace11ef",
+            "valid": true
+        },
+        {
+            "secret": "s",
+            "payload": "",
+            "signature": "sha1=71d58ad26842efdab8a2d541818921d2066afebd",
+            "valid": true
+        },
+        {
+            "secret": "sécret",
+            "payload": "café",
+            "signature": "sha1=69e0e54336ca8392472a7ffaf967142b7193f6c3",
+            "valid": true
+        }
+    ],
+    "teamPermissions": [
+        {
+            "flags": 0,
+            "permissions": {
+                "canEditTeamPackages": false,
+                "canAddPackages": false,
+                "canCreateSuborganizations": false,
+                "canViewVendorCustomers": false,
+                "canManageVendorCustomers": false
+            }
+        },
+        {
+            "flags": 1,
+            "permissions": {
+                "canEditTeamPackages": true,
+                "canAddPackages": false,
+                "canCreateSuborganizations": false,
+                "canViewVendorCustomers": false,
+                "canManageVendorCustomers": false
+            }
+        },
+        {
+            "flags": 2,
+            "permissions": {
+                "canEditTeamPackages": false,
+                "canAddPackages": true,
+                "canCreateSuborganizations": false,
+                "canViewVendorCustomers": false,
+                "canManageVendorCustomers": false
+            }
+        },
+        {
+            "flags": 3,
+            "permissions": {
+                "canEditTeamPackages": true,
+                "canAddPackages": true,
+                "canCreateSuborganizations": false,
+                "canViewVendorCustomers": false,
+                "canManageVendorCustomers": false
+            }
+        },
+        {
+            "flags": 4,
+            "permissions": {
+                "canEditTeamPackages": false,
+                "canAddPackages": false,
+                "canCreateSuborganizations": true,
+                "canViewVendorCustomers": false,
+                "canManageVendorCustomers": false
+            }
+        },
+        {
+            "flags": 8,
+            "permissions": {
+                "canEditTeamPackages": false,
+                "canAddPackages": false,
+                "canCreateSuborganizations": false,
+                "canViewVendorCustomers": true,
+                "canManageVendorCustomers": false
+            }
+        },
+        {
+            "flags": 16,
+            "permissions": {
+                "canEditTeamPackages": false,
+                "canAddPackages": false,
+                "canCreateSuborganizations": false,
+                "canViewVendorCustomers": false,
+                "canManageVendorCustomers": true
+            }
+        },
+        {
+            "flags": 31,
+            "permissions": {
+                "canEditTeamPackages": true,
+                "canAddPackages": true,
+                "canCreateSuborganizations": true,
+                "canViewVendorCustomers": true,
+                "canManageVendorCustomers": true
+            }
+        },
+        {
+            "flags": 6,
+            "permissions": {
+                "canEditTeamPackages": false,
+                "canAddPackages": true,
+                "canCreateSuborganizations": true,
+                "canViewVendorCustomers": false,
+                "canManageVendorCustomers": false
+            }
+        },
+        {
+            "flags": 24,
+            "permissions": {
+                "canEditTeamPackages": false,
+                "canAddPackages": false,
+                "canCreateSuborganizations": false,
+                "canViewVendorCustomers": true,
+                "canManageVendorCustomers": true
+            }
+        }
+    ]
+}

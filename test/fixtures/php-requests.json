@@ -1,0 +1,3750 @@
+{
+    "meta": {
+        "generator": "scripts/php-vectors.php",
+        "phpVersion": "8.4.27",
+        "phpClientVersion": "ca2f10ae70e399d8473a3de72109e25dcadd91a0",
+        "key": "packagist_ack_ffce048835c6cdea47bcc4b73c79",
+        "secret": "packagist_acs_0b6c3f0a4e2d8c41b7a95e13d06f7a2c9b1e5d44",
+        "timestamp": 1763020800,
+        "nonce": "c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01"
+    },
+    "vectors": [
+        {
+            "name": "organization.sync",
+            "args": [],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/organization/sync",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=8RwyUn0rTL6MhbkA2G3cDnwYZcQy6q2vsU+G37tUPbk="
+                }
+            ]
+        },
+        {
+            "name": "teams.all",
+            "args": [],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/teams/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=2BYJ1/7dugZ3pLnHh5GyToMrVEZZOkiRFvz0tylowK0="
+                }
+            ]
+        },
+        {
+            "name": "teams.create",
+            "args": [
+                "Developers",
+                3
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/teams/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"name\":\"Developers\",\"permissions\":{\"canEditTeamPackages\":true,\"canAddPackages\":true,\"canCreateSuborganizations\":false,\"canViewVendorCustomers\":false,\"canManageVendorCustomers\":false}}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=tn6vWCP+VR5pffU5+ZjATzLUdixy1Qc5IxUcznmq0+E="
+                }
+            ]
+        },
+        {
+            "name": "teams.create",
+            "args": [
+                "Vendors",
+                28
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/teams/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"name\":\"Vendors\",\"permissions\":{\"canEditTeamPackages\":false,\"canAddPackages\":false,\"canCreateSuborganizations\":true,\"canViewVendorCustomers\":true,\"canManageVendorCustomers\":true}}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=J1aTqoMsRLEIdEBrbXe9eI+Z96++LtOCyidwcij05uI="
+                }
+            ]
+        },
+        {
+            "name": "teams.show",
+            "args": [
+                1
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/teams/1/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=7lAGg88vAVLvM8QS7/IPDQ5fJgH2neLNyKJbcC59kOo="
+                }
+            ]
+        },
+        {
+            "name": "teams.edit",
+            "args": [
+                1,
+                "Owners",
+                31
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/teams/1/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"name\":\"Owners\",\"permissions\":{\"canEditTeamPackages\":true,\"canAddPackages\":true,\"canCreateSuborganizations\":true,\"canViewVendorCustomers\":true,\"canManageVendorCustomers\":true}}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=n4vtlOYXI52BMAoJYWOB9nzNukR+LP4BvX4XgjqMW9c="
+                }
+            ]
+        },
+        {
+            "name": "teams.grantAccessToAllPackages",
+            "args": [
+                1
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/teams/1/all-package-access/grant",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=UchQIcZ0lBq5L85VfJ9ZxzX8HlwBd+YPof7DQ8Pcyb4="
+                }
+            ]
+        },
+        {
+            "name": "teams.revokeAccessToAllPackages",
+            "args": [
+                1
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/teams/1/all-package-access/revoke",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=DpqiDSPIzL2vpSIqJiDv1+Nwg24s4e/B1Rf3DmxUp/s="
+                }
+            ]
+        },
+        {
+            "name": "teams.remove",
+            "args": [
+                1
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/teams/1/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=kcg5rYlrsqxera2PuZrAtXWenRiDpXsFceXvcOG/bgY="
+                }
+            ]
+        },
+        {
+            "name": "teams.addMember",
+            "args": [
+                1,
+                12
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/teams/1/members/12/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=jpKTwvJd7ry0ln+JJaUYSDG3Ksgj6IriEi9J3MROZms="
+                }
+            ]
+        },
+        {
+            "name": "teams.removeMember",
+            "args": [
+                1,
+                12
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/teams/1/members/12/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=p56jneZQoSCfZvcwX7rR2vUBiI3JTpi+hloeIq4UfyE="
+                }
+            ]
+        },
+        {
+            "name": "teams.packages",
+            "args": [
+                1
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/teams/1/packages/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=T/hvt9YzV0HcpOpqaVSftaCQD4QLxaii+cNWQkI0yyc="
+                }
+            ]
+        },
+        {
+            "name": "teams.addPackages",
+            "args": [
+                1,
+                [
+                    "acme-website/package",
+                    2
+                ]
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/teams/1/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "[\"acme-website\\/package\",2]",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=FW+MOfS1yGALCS3AW/eJtjp2AGEfrUikyOoyFXgndnI="
+                }
+            ]
+        },
+        {
+            "name": "teams.removePackage",
+            "args": [
+                1,
+                "acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/teams/1/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=bvIBOhkRmoLC8DNFBAgcgEQCMSCSYOf1QzLaj04arYk="
+                }
+            ]
+        },
+        {
+            "name": "tokens.all",
+            "args": [],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/tokens/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=Tt3EdM1Qm5g7Fj/yhitz3Wpmg/nN7ZQlWfKzT3j+Ydg="
+                }
+            ]
+        },
+        {
+            "name": "tokens.create",
+            "args": [
+                {
+                    "description": "CI token",
+                    "access": "read",
+                    "accessToAllPackages": true
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/tokens/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"description\":\"CI token\",\"access\":\"read\",\"accessToAllPackages\":true}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=+cML77hzyz9NCQ5RfXhsJcd2s642XotDkLNfFi+Za0U="
+                }
+            ]
+        },
+        {
+            "name": "tokens.create",
+            "args": [
+                {
+                    "description": "Team token",
+                    "access": "update",
+                    "teamId": 1,
+                    "expiresAt": "2027-01-01T00:00:00+00:00"
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/tokens/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"description\":\"Team token\",\"access\":\"update\",\"teamId\":1,\"expiresAt\":\"2027-01-01T00:00:00+00:00\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=oUoW6r+I81YIVtSer6jU39wCIHEDgwkCTxJGkCfoCxc="
+                }
+            ]
+        },
+        {
+            "name": "tokens.remove",
+            "args": [
+                33
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/tokens/33/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=o/g/O0UMWSXdEOK29U4/Dv0UkS4u0bixhDSCA95i9Mw="
+                }
+            ]
+        },
+        {
+            "name": "tokens.regenerate",
+            "args": [
+                33,
+                {
+                    "IConfirmOldTokenWillStopWorkingImmediately": true
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/tokens/33/regenerate",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"IConfirmOldTokenWillStopWorkingImmediately\":true}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=dXdZn7LfCT5s7a8jOd2PA1eEb4WSgKJytbfcM61ZRHg="
+                }
+            ]
+        },
+        {
+            "name": "customers.all",
+            "args": [],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/customers/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=wkHuf1VqzpPC6zDEJZO6oLw5eXvLMrfAjLSn27wSOXE="
+                }
+            ]
+        },
+        {
+            "name": "customers.show",
+            "args": [
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/customers/42/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=27NJMX20/VbBJ28WdwGkmXb29Oo30xK9+9/Ru44DBYE="
+                }
+            ]
+        },
+        {
+            "name": "customers.show",
+            "args": [
+                "customer-url-name"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/customers/customer-url-name/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=KVptMHMG67FW0pAHBVwvWRGF5ueEiE7nlxQj4wFM+UQ="
+                }
+            ]
+        },
+        {
+            "name": "customers.create",
+            "args": [
+                "New customer"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/customers/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"name\":\"New customer\",\"accessToVersionControlSource\":false,\"minimumAccessibleStability\":null,\"assignAllPackages\":false}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=zKyvdkttk+TEPPpwBNJf/L+YxTosBrd48l42l60hzeA="
+                }
+            ]
+        },
+        {
+            "name": "customers.create",
+            "args": [
+                "New customer",
+                false,
+                "customer-url-name",
+                "beta",
+                true
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/customers/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"name\":\"New customer\",\"accessToVersionControlSource\":false,\"minimumAccessibleStability\":\"beta\",\"assignAllPackages\":true,\"urlName\":\"customer-url-name\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=xuS7HjWRz+o85E9sIo0mgjXpqhacYLWSgJrjNwg+sgw="
+                }
+            ]
+        },
+        {
+            "name": "customers.create",
+            "args": [
+                "Café ✓",
+                true,
+                null,
+                "stable",
+                false
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/customers/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"name\":\"Caf\\u00e9 \\u2713\",\"accessToVersionControlSource\":true,\"minimumAccessibleStability\":\"stable\",\"assignAllPackages\":false}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=J+/xy1ID2jstOuNdeu9HX4JVrJl6DYg4DscoxAH2NZk="
+                }
+            ]
+        },
+        {
+            "name": "customers.edit",
+            "args": [
+                42,
+                {
+                    "name": "Renamed",
+                    "urlName": "customer",
+                    "accessToVersionControlSource": false,
+                    "minimumAccessibleStability": "beta",
+                    "assignAllPackages": true
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/customers/42/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"name\":\"Renamed\",\"urlName\":\"customer\",\"accessToVersionControlSource\":false,\"minimumAccessibleStability\":\"beta\",\"assignAllPackages\":true}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=O4lbHy4ikOxsduv/KZLF0NDIraZrLcEC9K+tF103sUs="
+                }
+            ]
+        },
+        {
+            "name": "customers.remove",
+            "args": [
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/customers/42/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=No2/obW+K0ANUkkwSrDL69frRxYBxkzeeswYkmc+BAU="
+                }
+            ]
+        },
+        {
+            "name": "customers.enable",
+            "args": [
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/customers/42/enable",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=zzBJuVstC2lxZdEz/KT+oeTrTlZU3zYFoPPN2BbI0K8="
+                }
+            ]
+        },
+        {
+            "name": "customers.disable",
+            "args": [
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/customers/42/disable",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=Ox6SW6XvSKswo7qdkPS0+jg7cOIpslHpTlt3Q8vHLCo="
+                }
+            ]
+        },
+        {
+            "name": "customers.listPackages",
+            "args": [
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/customers/42/packages/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=H+cI9fqVEAV/noyx7ZHvFpZWT58Kzblwi0t1Yruzhm4="
+                }
+            ]
+        },
+        {
+            "name": "customers.showPackage",
+            "args": [
+                42,
+                "acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/customers/42/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=A5LmK4kiikE68/WX2T5cwj0huDZy4LBuHkE8Z2A6Et8="
+                }
+            ]
+        },
+        {
+            "name": "customers.addOrEditPackages",
+            "args": [
+                42,
+                [
+                    {
+                        "name": "acme-website/package",
+                        "versionConstraint": "^1.0 | ^2.0",
+                        "expirationDate": "2027-11-13T00:00:00+00:00",
+                        "minimumAccessibleStability": "beta"
+                    }
+                ]
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/customers/42/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "[{\"name\":\"acme-website\\/package\",\"versionConstraint\":\"^1.0 | ^2.0\",\"expirationDate\":\"2027-11-13T00:00:00+00:00\",\"minimumAccessibleStability\":\"beta\"}]",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=8QEdshIFlSZG7Fid2Pf7QJvCzkFY8nekCBiqoWtVi+w="
+                }
+            ]
+        },
+        {
+            "name": "customers.removePackage",
+            "args": [
+                42,
+                "acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/customers/42/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=4HX0531JO24/My+m6YhBrlc2EYijRovZSdMmPf+7cE4="
+                }
+            ]
+        },
+        {
+            "name": "customers.regenerateToken",
+            "args": [
+                42,
+                {
+                    "IConfirmOldTokenWillStopWorkingImmediately": true
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/customers/42/token/regenerate",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"IConfirmOldTokenWillStopWorkingImmediately\":true}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=seObsTEGHz2MfgLK1yKJ3wdMthrvKm1+CR3DJGstszA="
+                }
+            ]
+        },
+        {
+            "name": "customers.vendorBundles.listVendorBundles",
+            "args": [
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/customers/42/vendor-bundles/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=mhT0VVZAEBhWUqd3i89W0lhttzoFqmTdCpnyLFLbJLQ="
+                }
+            ]
+        },
+        {
+            "name": "customers.vendorBundles.addOrEditVendorBundle",
+            "args": [
+                42,
+                12
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/customers/42/vendor-bundles/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"vendorBundleId\":12,\"expirationDate\":null}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=ME4hfjaiQlBmPAxVotgkI5VP1op+D6YQbrQc+odZInI="
+                }
+            ]
+        },
+        {
+            "name": "customers.vendorBundles.addOrEditVendorBundle",
+            "args": [
+                42,
+                12,
+                "2027-11-13T00:00:00+00:00"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/customers/42/vendor-bundles/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"vendorBundleId\":12,\"expirationDate\":\"2027-11-13T00:00:00+00:00\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=PIe6HyLzQ1WBlf7NSFj34F2IYW6nHVAZ68V+/MmA7TY="
+                }
+            ]
+        },
+        {
+            "name": "customers.vendorBundles.removeVendorBundle",
+            "args": [
+                42,
+                12
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/customers/42/vendor-bundles/12/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=uP2uvgI32UPJknkY/WPFKf7vIpaaj5BREWL37dg7bbI="
+                }
+            ]
+        },
+        {
+            "name": "customers.magentoLegacyKeys.all",
+            "args": [
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/customers/42/magento-legacy-keys/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=aiUpHnW1v8pRhb0rmRu/i1OvJdknKcl6hyUJi4bKKtY="
+                }
+            ]
+        },
+        {
+            "name": "customers.magentoLegacyKeys.create",
+            "args": [
+                42,
+                "public-key",
+                "private-key"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/customers/42/magento-legacy-keys/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"publicKey\":\"public-key\",\"privateKey\":\"private-key\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=n3T/e3XZNKqkikYGkBusZKSx0TK+U8vGDY0t3m2uf/I="
+                }
+            ]
+        },
+        {
+            "name": "customers.magentoLegacyKeys.remove",
+            "args": [
+                42,
+                "public-key"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/customers/42/magento-legacy-keys/public-key/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=dhyKF8sGz7OXwYO4MLTGoJhs5JfFliXiE/ilnuc9RMI="
+                }
+            ]
+        },
+        {
+            "name": "vendorBundles.all",
+            "args": [],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/vendor-bundles/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=GGRxjG+4Rf1CuOuDeFQIr0HeGvyDqTAjEXxFbWXLwO4="
+                }
+            ]
+        },
+        {
+            "name": "vendorBundles.show",
+            "args": [
+                7
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/vendor-bundles/7/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=MWN+A03bKpHvOutn9M2TFJmdif/OEtG0DOTgWWf4OPA="
+                }
+            ]
+        },
+        {
+            "name": "vendorBundles.create",
+            "args": [
+                "Bundle"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/vendor-bundles/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"name\":\"Bundle\",\"minimumAccessibleStability\":null,\"versionConstraint\":null,\"assignAllPackages\":false,\"synchronizationIds\":[]}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=E1eDF5fWNb+Wavcl7fsMmPyuhVunpaxB4zmk73KUcEk="
+                }
+            ]
+        },
+        {
+            "name": "vendorBundles.create",
+            "args": [
+                "Bundle",
+                "dev",
+                "^1.0",
+                true,
+                [
+                    123
+                ]
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/vendor-bundles/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"name\":\"Bundle\",\"minimumAccessibleStability\":\"dev\",\"versionConstraint\":\"^1.0\",\"assignAllPackages\":true,\"synchronizationIds\":[123]}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=y/LQJOnPSf7HzcDL07de6/72HEmG4q7hnJmhfApaCSM="
+                }
+            ]
+        },
+        {
+            "name": "vendorBundles.edit",
+            "args": [
+                7,
+                {
+                    "name": "Bundle name",
+                    "minimumAccessibleStability": "dev",
+                    "versionConstraint": "^1.0",
+                    "assignAllPackages": true,
+                    "synchronizationIds": [
+                        123
+                    ]
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/vendor-bundles/7/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"name\":\"Bundle name\",\"minimumAccessibleStability\":\"dev\",\"versionConstraint\":\"^1.0\",\"assignAllPackages\":true,\"synchronizationIds\":[123]}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=koigkw12q9wwqVBC/XgxhWb6jipiYTcy7KM9LJHdnq4="
+                }
+            ]
+        },
+        {
+            "name": "vendorBundles.remove",
+            "args": [
+                7
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/vendor-bundles/7/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=4BUCqK47fQG17W5XAhSntkDfi+AXCKSTzOPXiO/XQvE="
+                }
+            ]
+        },
+        {
+            "name": "vendorBundles.packages.listPackages",
+            "args": [
+                7
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/vendor-bundles/7/packages/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=3weNoSu7c/sQHSb5sxlyiihVuXyNnwJtbKqwm7bx4Ek="
+                }
+            ]
+        },
+        {
+            "name": "vendorBundles.packages.addOrEditPackages",
+            "args": [
+                7,
+                [
+                    {
+                        "name": "acme-website/package",
+                        "versionConstraint": "^1.0 | ^2.0",
+                        "minimumAccessibleStability": "beta"
+                    }
+                ]
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/vendor-bundles/7/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "[{\"name\":\"acme-website\\/package\",\"versionConstraint\":\"^1.0 | ^2.0\",\"minimumAccessibleStability\":\"beta\"}]",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=/WoVQLOmoXITUanBi7fJjlmqG1/vx34S0pVNFTu5hX4="
+                }
+            ]
+        },
+        {
+            "name": "vendorBundles.packages.removePackage",
+            "args": [
+                7,
+                "acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/vendor-bundles/7/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=woU3zxlAKGL22YNH7YHj5FqAoCyFJtnOkOham+xX2WY="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.all",
+            "args": [],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/suborganizations/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=l7bG2QL49yyB8iAoxIto94W4Wq0y6Zh101ak838OVyA="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.show",
+            "args": [
+                "sub"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/suborganizations/sub/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=XHngJctnhlpsJeHS3Nyr1hE+LfAbVZr1CjlPB03dfKI="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.create",
+            "args": [
+                "New suborganization"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/suborganizations/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"name\":\"New suborganization\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=zj/8x0+gM3n69WxFbch7R12B/v6O6MmRBLgHXtGAgkk="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.remove",
+            "args": [
+                "sub"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/suborganizations/sub/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=3OPBGD/Zv7RgpiLIO8XS0uZNPkxWJpzxh2e4NTRYSDY="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.listTeams",
+            "args": [
+                "sub"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/suborganizations/sub/teams/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=8ZnPCVzyyeaiyPawhbJHPABBzmFW6P57Y0e80YdoAcM="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.addOrEditTeams",
+            "args": [
+                "sub",
+                [
+                    {
+                        "id": 12,
+                        "permission": "owner"
+                    }
+                ]
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/suborganizations/sub/teams/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "[{\"id\":12,\"permission\":\"owner\"}]",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=U3FOOKQA18/kM7QXWWNB4YSMJX9gzHawxFN+LLS4Ces="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.removeTeam",
+            "args": [
+                "sub",
+                12
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/suborganizations/sub/teams/12/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=FLAnzKbD05pkkfRevtfljG2xmm831SLo3OM42rKgdi0="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.listTokens",
+            "args": [
+                "sub"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/suborganizations/sub/tokens/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=wfNm6YLl4lUdFIe+GnXwlqMuoWd9FevL9ZaxhRnPs+I="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.createToken",
+            "args": [
+                "sub",
+                {
+                    "description": "Suborganization Token",
+                    "access": "read"
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/suborganizations/sub/tokens/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"description\":\"Suborganization Token\",\"access\":\"read\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=D9QFI/BhLXIjocvKTVPpRoUV1B1PwbcXPSD6GGPxf/4="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.removeToken",
+            "args": [
+                "sub",
+                33
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/suborganizations/sub/tokens/33/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=9mTDfHjON7xQIPKkq2LkVT+xXKY0fAgW8IGyztFZNoM="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.regenerateToken",
+            "args": [
+                "sub",
+                33,
+                {
+                    "IConfirmOldTokenWillStopWorkingImmediately": true
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/suborganizations/sub/tokens/33/regenerate",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"IConfirmOldTokenWillStopWorkingImmediately\":true}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=mdZ8SiVXz4rRqisIQ/Di91vFd+FBpq1jPflkSbQxmiQ="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.all",
+            "args": [
+                "sub"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=RNypyGCl9oYV1W6zbI6ipu1Q3tlgwjBkyIbdajk2a2E="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.all",
+            "args": [
+                "sub",
+                {
+                    "origin": "private"
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/?limit=500&origin=private",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=UFvCf7xp6S2aeeb8BHKq+Y7o0oEiaa+UHxRMVgnwd+Y="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.show",
+            "args": [
+                "sub",
+                "acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=9Ygr9bBykka5bFytwCpJCcNCH/rUrErvd5EMgd06bdI="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.createVcsPackage",
+            "args": [
+                "sub",
+                "https://github.com/acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"vcs\",\"repoUrl\":\"https:\\/\\/github.com\\/acme-website\\/package\",\"credentials\":null}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=PypnNxiASwdLTY89BGCCO1IJNR9c6FPEE5FQ0KezMX4="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.createVcsPackage",
+            "args": [
+                "sub",
+                "https://github.com/acme-website/package",
+                42,
+                "git",
+                "admin"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"git\",\"repoUrl\":\"https:\\/\\/github.com\\/acme-website\\/package\",\"credentials\":42,\"defaultSuborganizationAccess\":\"admin\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=dl+wSQXeGQQR7RUJkftgxdjRHwzcJUFUSWFMCx4CCas="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.createCustomPackage",
+            "args": [
+                "sub",
+                "{\"name\":\"acme/custom\",\"version\":\"1.0.0\",\"dist\":{\"url\":\"https://example.com/custom.zip\",\"type\":\"zip\"}}"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"package\",\"repoConfig\":\"{\\\"name\\\":\\\"acme\\/custom\\\",\\\"version\\\":\\\"1.0.0\\\",\\\"dist\\\":{\\\"url\\\":\\\"https:\\/\\/example.com\\/custom.zip\\\",\\\"type\\\":\\\"zip\\\"}}\",\"credentials\":null}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=uSGqXDqJmg5zQzHvFfo+75VTq7gUiDcsw9JR34SZAww="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.createCustomPackage",
+            "args": [
+                "sub",
+                "{\"name\":\"acme/custom\",\"version\":\"1.0.0\",\"dist\":{\"url\":\"https://example.com/custom.zip\",\"type\":\"zip\"}}",
+                42,
+                "read"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"package\",\"repoConfig\":\"{\\\"name\\\":\\\"acme\\/custom\\\",\\\"version\\\":\\\"1.0.0\\\",\\\"dist\\\":{\\\"url\\\":\\\"https:\\/\\/example.com\\/custom.zip\\\",\\\"type\\\":\\\"zip\\\"}}\",\"credentials\":42,\"defaultSuborganizationAccess\":\"read\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=TwkdExw2dR7FMrDr/IMt4SDK6vIpBZZhgFxpDP367Ng="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.createArtifactPackage",
+            "args": [
+                "sub",
+                [
+                    41,
+                    42
+                ]
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"artifact\",\"artifactIds\":[41,42]}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=Y8piXcCGclXXk5h0UvPkWxT/VjTtNSKlYHD1fvqtcAw="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.editVcsPackage",
+            "args": [
+                "sub",
+                "acme-website/package",
+                "https://github.com/acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"vcs\",\"repoUrl\":\"https:\\/\\/github.com\\/acme-website\\/package\",\"credentials\":null}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=6VwMXZIDhS5xSdR+8pYDrODf3bGNoS4tyot+EU/frKY="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.editCustomPackage",
+            "args": [
+                "sub",
+                "acme-website/package",
+                "{\"name\":\"acme/custom\",\"version\":\"1.0.0\",\"dist\":{\"url\":\"https://example.com/custom.zip\",\"type\":\"zip\"}}",
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"package\",\"repoConfig\":\"{\\\"name\\\":\\\"acme\\/custom\\\",\\\"version\\\":\\\"1.0.0\\\",\\\"dist\\\":{\\\"url\\\":\\\"https:\\/\\/example.com\\/custom.zip\\\",\\\"type\\\":\\\"zip\\\"}}\",\"credentials\":42}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=m6uCAxUkErfDJGsX+8Sf9+tXFO7OHn3TTwVcK8Ds9rw="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.editArtifactPackage",
+            "args": [
+                "sub",
+                "acme-website/package",
+                [
+                    42,
+                    43
+                ]
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"artifact\",\"artifactIds\":[42,43]}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=BT1bVG5oI1XbCP2pljCvFtZOYF0XaoNUPjuEp5wFS1Y="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.remove",
+            "args": [
+                "sub",
+                "acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=iqheHHVe2F44ryWW0axXHZDmVnyObSGTMD+sErhB/x0="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.listDependents",
+            "args": [
+                "sub",
+                "acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/acme-website%2Fpackage/dependents/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=jKhqrKrkU10gD4BwnOR8Pp98H0mokS4o2NI5ZIhOlCs="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.artifacts.create",
+            "args": [
+                "sub",
+                "zip",
+                "application/zip",
+                "package1.zip"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/artifacts/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/zip",
+                        "X-FILENAME": "package1.zip"
+                    },
+                    "body": "UEsDBAABAgMEBQYHCAkKCwwNDg8QERITFBUWFxgZGhscHR4fICEiIyQlJicoKSorLC0uLzAxMjM0NTY3ODk6Ozw9Pj9AQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVpbXF1eX2BhYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ent8fX5/gIGCg4SFhoeIiYqLjI2Oj5CRkpOUlZaXmJmam5ydnp+goaKjpKWmp6ipqqusra6vsLGys7S1tre4ubq7vL2+v8DBwsPExcbHyMnKy8zNzs/Q0dLT1NXW19jZ2tvc3d7f4OHi4+Tl5ufo6err7O3u7/Dx8vP09fb3+Pn6+/z9/v8=",
+                    "bodyEncoding": "base64",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=FYimAlxpSyXDV+yufL3VfU3swSiTZWb+y5Oul3NZ5Ms="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.artifacts.add",
+            "args": [
+                "sub",
+                "acme/artifact",
+                "zip",
+                "application/zip",
+                "package1.zip"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/acme%2Fartifact/artifacts/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/zip",
+                        "X-FILENAME": "package1.zip"
+                    },
+                    "body": "UEsDBAABAgMEBQYHCAkKCwwNDg8QERITFBUWFxgZGhscHR4fICEiIyQlJicoKSorLC0uLzAxMjM0NTY3ODk6Ozw9Pj9AQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVpbXF1eX2BhYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ent8fX5/gIGCg4SFhoeIiYqLjI2Oj5CRkpOUlZaXmJmam5ydnp+goaKjpKWmp6ipqqusra6vsLGys7S1tre4ubq7vL2+v8DBwsPExcbHyMnKy8zNzs/Q0dLT1NXW19jZ2tvc3d7f4OHi4+Tl5ufo6err7O3u7/Dx8vP09fb3+Pn6+/z9/v8=",
+                    "bodyEncoding": "base64",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=qaMWyG4/rN6m4pO1zzYB3PCj49uvrxd1XXmC6Vaggac="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.artifacts.show",
+            "args": [
+                "sub",
+                41
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/artifacts/41/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=I8A0R/lYYVfGFcHgHLWLi08C0adqAgk1KpPEFIyFGg0="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.packages.artifacts.showPackageArtifacts",
+            "args": [
+                "sub",
+                "acme/artifact"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/suborganizations/sub/packages/acme%2Fartifact/artifacts/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=IaxNIV8jFoKrSECaH9RfTbX/ejZTIC7+O5fh8EJ2dwY="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.mirroredRepositories.all",
+            "args": [
+                "sub"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/suborganizations/sub/mirrored-repositories/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=O8re+ou/KVA4wMYnjRa7q8Il9SNENhbR8+QPy9JpFZ0="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.mirroredRepositories.add",
+            "args": [
+                "sub",
+                [
+                    {
+                        "id": 12,
+                        "mirroringBehavior": "add_on_use"
+                    }
+                ]
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/suborganizations/sub/mirrored-repositories/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "[{\"id\":12,\"mirroringBehavior\":\"add_on_use\"}]",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=JBA+b2j9LO+e/h1RoWtjLZ/T6JdRyDs5ck8Lb2ZrONk="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.mirroredRepositories.show",
+            "args": [
+                "sub",
+                12
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/suborganizations/sub/mirrored-repositories/12/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=YNxQEeKdwguUDC+x9/GqKIr0rkZdA3dc9oBEoDNHFJA="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.mirroredRepositories.edit",
+            "args": [
+                "sub",
+                12,
+                "add_all"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/suborganizations/sub/mirrored-repositories/12/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"mirroringBehavior\":\"add_all\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=MxzzLIDSauzJwrDsLVnOyrbL5JApevVr0wHAA39Uz0c="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.mirroredRepositories.remove",
+            "args": [
+                "sub",
+                12
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/suborganizations/sub/mirrored-repositories/12/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=c3iGTL66S7p0CrzpdMh1untkepW3rVIfDDuSmh7PbO4="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.mirroredRepositories.listPackages",
+            "args": [
+                "sub",
+                12
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/suborganizations/sub/mirrored-repositories/12/packages/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=isloETRltMSXUBABtP7OsPJDiYfhpEYZhUUZhtEypkI="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.mirroredRepositories.addPackages",
+            "args": [
+                "sub",
+                12,
+                [
+                    "acme/cool-lib"
+                ]
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/suborganizations/sub/mirrored-repositories/12/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "[\"acme\\/cool-lib\"]",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=DX+qBIBjXTppGcpFmhmltlXBUqvGxsQkEwsMe8SaINc="
+                }
+            ]
+        },
+        {
+            "name": "suborganizations.mirroredRepositories.removePackages",
+            "args": [
+                "sub",
+                12
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/suborganizations/sub/mirrored-repositories/12/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=QYNgpXY5l1xUpZurgaTPfsHcZ0E0X22ZKTSgZ4kRgL4="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.all",
+            "args": [],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/subrepositories/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=WfmSGlSdJvWPY8G8pO3HL58Uhb/JQCNcqp10NlcdQFE="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.show",
+            "args": [
+                "sub"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/subrepositories/sub/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=1UDe4lxPiO2zT3KBS5XnhfwK0BBTkuJzCEuTwPOw0Ks="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.create",
+            "args": [
+                "New subrepository"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/subrepositories/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"name\":\"New subrepository\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=AEGTbEzHp8uXyP6z7ponF5Ju6xpMaa/nLhGOrnYpjfM="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.remove",
+            "args": [
+                "sub"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/subrepositories/sub/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=FwDbcsn0y8Ftv80tQ3+uk27uENkFE3DwswgMsWZMVPo="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.listTeams",
+            "args": [
+                "sub"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/subrepositories/sub/teams/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=OhzJTMJD7SpeBgibpvU1Z3S54RCNhcFG3Anrbos1FIg="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.addOrEditTeams",
+            "args": [
+                "sub",
+                [
+                    {
+                        "id": 12,
+                        "permission": "view"
+                    }
+                ]
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/subrepositories/sub/teams/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "[{\"id\":12,\"permission\":\"view\"}]",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=rcWscxIfuU8kuV6Zd3fflijVY82PDQce2LaoDHvQlkA="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.removeTeam",
+            "args": [
+                "sub",
+                12
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/subrepositories/sub/teams/12/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=T9V63WysWsEIqrI71YCMyhDaCiG+3d0p1Yid2YySyrY="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.listTokens",
+            "args": [
+                "sub"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/subrepositories/sub/tokens/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=bpV634qGy3SAsFTNekeXkV0NFaLXoWdKrZDojnqq2NQ="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.createToken",
+            "args": [
+                "sub",
+                {
+                    "description": "Token",
+                    "access": "read"
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/subrepositories/sub/tokens/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"description\":\"Token\",\"access\":\"read\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=gK2yInHJooY87mzDwbc/Q8/TU/i8l/MC9UsU0//Vvew="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.removeToken",
+            "args": [
+                "sub",
+                33
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/subrepositories/sub/tokens/33/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=08IRftFIksoQqZxluuBBFqrve00UQpAt+cC34YhZHxw="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.regenerateToken",
+            "args": [
+                "sub",
+                33,
+                {
+                    "IConfirmOldTokenWillStopWorkingImmediately": true
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/subrepositories/sub/tokens/33/regenerate",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"IConfirmOldTokenWillStopWorkingImmediately\":true}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=oM01hC2hnUqOTug1FY2GjfnVOKwBxCCSkc2kb/83XN4="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.packages.all",
+            "args": [
+                "sub",
+                {
+                    "origin": "public-mirror"
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/subrepositories/sub/packages/?limit=500&origin=public-mirror",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=9rU2IuWax2S0nICJsnk1qMlV6M0GYuA+F5psk15YJmQ="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.packages.show",
+            "args": [
+                "sub",
+                "acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/subrepositories/sub/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=BxXwXf5dvs1bggDmW2yXvEa3RWtI8S5oWIBm2wW8GeM="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.packages.createVcsPackage",
+            "args": [
+                "sub",
+                "https://github.com/acme-website/package",
+                null,
+                "vcs",
+                null
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/subrepositories/sub/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"vcs\",\"repoUrl\":\"https:\\/\\/github.com\\/acme-website\\/package\",\"credentials\":null}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=l6DmuwYPhaXtdxC/o6h8/TN5exwPryhzYhDGw76mNPY="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.packages.createCustomPackage",
+            "args": [
+                "sub",
+                "{\"name\":\"acme/custom\",\"version\":\"1.0.0\",\"dist\":{\"url\":\"https://example.com/custom.zip\",\"type\":\"zip\"}}"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/subrepositories/sub/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"package\",\"repoConfig\":\"{\\\"name\\\":\\\"acme\\/custom\\\",\\\"version\\\":\\\"1.0.0\\\",\\\"dist\\\":{\\\"url\\\":\\\"https:\\/\\/example.com\\/custom.zip\\\",\\\"type\\\":\\\"zip\\\"}}\",\"credentials\":null}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=XGmi9wdSpylf28JTDKrf/pfCnPNlAe07s0FaEEz4rHs="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.packages.editVcsPackage",
+            "args": [
+                "sub",
+                "acme-website/package",
+                "https://github.com/acme-website/package",
+                42,
+                "git"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/subrepositories/sub/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"git\",\"repoUrl\":\"https:\\/\\/github.com\\/acme-website\\/package\",\"credentials\":42}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=jYkwBA2uO8iLEO6mCqcrpyXdhaswYPxHG0q6vtIbVt4="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.packages.editCustomPackage",
+            "args": [
+                "sub",
+                "acme-website/package",
+                "{\"name\":\"acme/custom\",\"version\":\"1.0.0\",\"dist\":{\"url\":\"https://example.com/custom.zip\",\"type\":\"zip\"}}"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/subrepositories/sub/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"package\",\"repoConfig\":\"{\\\"name\\\":\\\"acme\\/custom\\\",\\\"version\\\":\\\"1.0.0\\\",\\\"dist\\\":{\\\"url\\\":\\\"https:\\/\\/example.com\\/custom.zip\\\",\\\"type\\\":\\\"zip\\\"}}\",\"credentials\":null}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=yATJi0oZPhyWzTv0QrDurfViUuGTJ6whNI3uPKqLjhg="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.packages.remove",
+            "args": [
+                "sub",
+                "acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/subrepositories/sub/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=KN17foUgEqosHjeoWD2Js0LtVWY0q7oLmmOsp1pAZ1s="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.packages.listDependents",
+            "args": [
+                "sub",
+                "acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/subrepositories/sub/packages/acme-website%2Fpackage/dependents/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=NzBd6i7klPSs3B0cdiZGthtbD1kM6B+hFTQzmU+9lIY="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.mirroredRepositories.all",
+            "args": [
+                "sub"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/subrepositories/sub/mirrored-repositories/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=dvxhuvOY4z3L5CkrSId5+mZBmQF8RbfhwBGBATY5Ugw="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.mirroredRepositories.add",
+            "args": [
+                "sub",
+                [
+                    {
+                        "id": 12,
+                        "mirroringBehavior": "add_on_use"
+                    }
+                ]
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/subrepositories/sub/mirrored-repositories/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "[{\"id\":12,\"mirroringBehavior\":\"add_on_use\"}]",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=LNal5YXBAmGFQZJYHJVbkrsquhs40Nkne9dP47Mt5ZE="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.mirroredRepositories.show",
+            "args": [
+                "sub",
+                12
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/subrepositories/sub/mirrored-repositories/12/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=uSLEKrmOUkLwWVHhqUeU6x/Rb+tikH08Tqf6DZ3mcpQ="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.mirroredRepositories.edit",
+            "args": [
+                "sub",
+                12,
+                "add_all"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/subrepositories/sub/mirrored-repositories/12/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"mirroringBehavior\":\"add_all\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=8EnLXC9uJ5lUgCS0Tr4NhbKTGHtAj2XAZ+/XoJltbzY="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.mirroredRepositories.remove",
+            "args": [
+                "sub",
+                12
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/subrepositories/sub/mirrored-repositories/12/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=BTmmcVZ5K+hWuKr9PxBeBAC+JoibjM5J3MpcqaYTEsc="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.mirroredRepositories.listPackages",
+            "args": [
+                "sub",
+                12
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/subrepositories/sub/mirrored-repositories/12/packages/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=sWE2HpTbk2W6PuqncBTVVd3p3elT5Mx7mSafYe6wRZM="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.mirroredRepositories.addPackages",
+            "args": [
+                "sub",
+                12,
+                [
+                    "acme/cool-lib"
+                ]
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/subrepositories/sub/mirrored-repositories/12/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "[\"acme\\/cool-lib\"]",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=T905FW7J7dSX1S1fEEsMji8CN9mIMfOLzTb2/wC4bBg="
+                }
+            ]
+        },
+        {
+            "name": "subrepositories.mirroredRepositories.removePackages",
+            "args": [
+                "sub",
+                12
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/subrepositories/sub/mirrored-repositories/12/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=Z2KW7oFqT4ojzbzsGR4cKqogAWWReo2dKOEoHnUUajU="
+                }
+            ]
+        },
+        {
+            "name": "packages.all",
+            "args": [],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/packages/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=9IH7PCkVG+hTewvV50cijwUunpeEx1O+HO0OWWTn8rE="
+                }
+            ]
+        },
+        {
+            "name": "packages.all",
+            "args": [
+                {
+                    "origin": "private",
+                    "security-issue-state": "open"
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/packages/?limit=500&origin=private&security-issue-state=open",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=L3/gMGAidaGma7B4DJuKmmC2VlmvpR+lk1mdJeSxzQ4="
+                }
+            ]
+        },
+        {
+            "name": "packages.all",
+            "args": [
+                {
+                    "limit": 50
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/packages/?limit=50",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=yXbU89vM2DENM5QyggEXUcLg1AtrQJpirUQd+O3xXOg="
+                }
+            ]
+        },
+        {
+            "name": "packages.show",
+            "args": [
+                "acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=i81H41gBoZddBHgiV32Wet28lKkGFgW8tWwnz27lDvI="
+                }
+            ]
+        },
+        {
+            "name": "packages.show",
+            "args": [
+                123
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/packages/123/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=PmPn4HYg91gVhmoVz88p6SDUUZQNuT7/67YxNZCLSv0="
+                }
+            ]
+        },
+        {
+            "name": "packages.createVcsPackage",
+            "args": [
+                "https://github.com/acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"vcs\",\"repoUrl\":\"https:\\/\\/github.com\\/acme-website\\/package\",\"credentials\":null}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=NpIPq7upJDUn5BoePnGvsSKPIyLObshmt1B2gVotnFw="
+                }
+            ]
+        },
+        {
+            "name": "packages.createVcsPackage",
+            "args": [
+                "https://github.com/acme-website/package",
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"vcs\",\"repoUrl\":\"https:\\/\\/github.com\\/acme-website\\/package\",\"credentials\":42}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=nFiB+hRWi5Y7bnoKb+UCFQ64AdwyhYja2k/mvDHu5qY="
+                }
+            ]
+        },
+        {
+            "name": "packages.createVcsPackage",
+            "args": [
+                "https://github.com/acme-website/package",
+                null,
+                "git",
+                "admin"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"git\",\"repoUrl\":\"https:\\/\\/github.com\\/acme-website\\/package\",\"credentials\":null,\"defaultSuborganizationAccess\":\"admin\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=8rDfNKHQREJ7rQ8ADWs17eVS97RuCXt++eF+9IZcd8o="
+                }
+            ]
+        },
+        {
+            "name": "packages.createCustomPackage",
+            "args": [
+                "{\"name\":\"acme/custom\",\"version\":\"1.0.0\",\"dist\":{\"url\":\"https://example.com/custom.zip\",\"type\":\"zip\"}}"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"package\",\"repoConfig\":\"{\\\"name\\\":\\\"acme\\/custom\\\",\\\"version\\\":\\\"1.0.0\\\",\\\"dist\\\":{\\\"url\\\":\\\"https:\\/\\/example.com\\/custom.zip\\\",\\\"type\\\":\\\"zip\\\"}}\",\"credentials\":null}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=LoMHsvyBo95tLs+3HExnbAjY3kFgYFRgmK71Unl5/bE="
+                }
+            ]
+        },
+        {
+            "name": "packages.createCustomPackage",
+            "args": [
+                {
+                    "name": "acme/custom",
+                    "version": "1.0.0"
+                },
+                42,
+                "read"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"package\",\"repoConfig\":\"{\\\"name\\\":\\\"acme\\\\\\/custom\\\",\\\"version\\\":\\\"1.0.0\\\"}\",\"credentials\":42,\"defaultSuborganizationAccess\":\"read\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=WMAsw8puFhhlaTWgZGBTKJ87qi2t8eU+9tk5//e9YvM="
+                }
+            ]
+        },
+        {
+            "name": "packages.createArtifactPackage",
+            "args": [
+                [
+                    41
+                ]
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"artifact\",\"artifactIds\":[41]}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=DdCl6hRTtvXtFw036vOpcnIbOE7dF9nGc/nD/yBVgy0="
+                }
+            ]
+        },
+        {
+            "name": "packages.createArtifactPackage",
+            "args": [
+                [
+                    41,
+                    42
+                ],
+                "hidden"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"artifact\",\"artifactIds\":[41,42],\"defaultSuborganizationAccess\":\"hidden\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=TpUhc/cuALIJZYGxR/TQ6/UI90tVXjMTn4fVnRyqk+w="
+                }
+            ]
+        },
+        {
+            "name": "packages.editVcsPackage",
+            "args": [
+                "acme-website/package",
+                "https://github.com/acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"vcs\",\"repoUrl\":\"https:\\/\\/github.com\\/acme-website\\/package\",\"credentials\":null}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=X0CCmkajaej786JThuhPsG7sJ0EhIiDI0SpzKYE+Xg4="
+                }
+            ]
+        },
+        {
+            "name": "packages.editVcsPackage",
+            "args": [
+                "acme-website/package",
+                "https://gitlab.com/acme/package.git",
+                7,
+                "git",
+                "read"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"git\",\"repoUrl\":\"https:\\/\\/gitlab.com\\/acme\\/package.git\",\"credentials\":7,\"defaultSuborganizationAccess\":\"read\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=jA3rgQodAES1nBpu0ChHQ+m502iQhyU+0fEomCwtG8E="
+                }
+            ]
+        },
+        {
+            "name": "packages.editArtifactPackage",
+            "args": [
+                "acme/artifact",
+                [
+                    42,
+                    43
+                ]
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/packages/acme%2Fartifact/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"artifact\",\"artifactIds\":[42,43]}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=0ovgQykzU2S4GwYfAmBGz4qEEc73o2n5OgwwIkJYp3c="
+                }
+            ]
+        },
+        {
+            "name": "packages.editCustomPackage",
+            "args": [
+                "acme-website/package",
+                "{\"name\":\"acme/custom\",\"version\":\"1.0.0\",\"dist\":{\"url\":\"https://example.com/custom.zip\",\"type\":\"zip\"}}"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"repoType\":\"package\",\"repoConfig\":\"{\\\"name\\\":\\\"acme\\/custom\\\",\\\"version\\\":\\\"1.0.0\\\",\\\"dist\\\":{\\\"url\\\":\\\"https:\\/\\/example.com\\/custom.zip\\\",\\\"type\\\":\\\"zip\\\"}}\",\"credentials\":null}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=UlpiIN2mkr2bpEkd8cPVU/vUG1m+xGBGmjIesjlp6Zs="
+                }
+            ]
+        },
+        {
+            "name": "packages.remove",
+            "args": [
+                "acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/packages/acme-website%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=XuwJMoY73uGg6/9cEnRlKm7VPBNhKSvBYS+lo9KO7qM="
+                }
+            ]
+        },
+        {
+            "name": "packages.listCustomers",
+            "args": [
+                "acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/packages/acme-website%2Fpackage/customers/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=Dfxawi79tHSWiekEmoKdP8XuPaxc4iTEYEZ+FP4o0mk="
+                }
+            ]
+        },
+        {
+            "name": "packages.listDependents",
+            "args": [
+                "acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/packages/acme-website%2Fpackage/dependents/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=/0dsBuMR7NshpCHHhxck9n+9+RHNmLAqKu8yMg1FccU="
+                }
+            ]
+        },
+        {
+            "name": "packages.listSecurityIssues",
+            "args": [
+                "acme-website/package",
+                {
+                    "security-issue-state": "open"
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/packages/acme-website%2Fpackage/security-issues/?limit=500&security-issue-state=open",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=rfVRxjPiwgcHGbnuGJdDvDFbnKCgmOXeUhfX8+ueBP8="
+                }
+            ]
+        },
+        {
+            "name": "packages.showSecurityMonitoringConfig",
+            "args": [
+                "acme-website/package"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/packages/acme-website%2Fpackage/security-monitoring/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=0ZMa6erwPu1Ahkh/p+6TJoimHcKcNmi0tvGBG7Bcu8s="
+                }
+            ]
+        },
+        {
+            "name": "packages.editSecurityMonitoringConfig",
+            "args": [
+                "acme-website/package",
+                {
+                    "monitorAllBranches": false,
+                    "monitoredBranches": [
+                        "dev-main"
+                    ]
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/packages/acme-website%2Fpackage/security-monitoring/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"monitorAllBranches\":false,\"monitoredBranches\":[\"dev-main\"]}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=oXGjPiOPFRyAdNCva8ebX3FvGT+MkZ2AJ3oqMoBxeE0="
+                }
+            ]
+        },
+        {
+            "name": "packages.artifacts.create",
+            "args": [
+                "zip",
+                "application/zip",
+                "package1.zip"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/packages/artifacts/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/zip",
+                        "X-FILENAME": "package1.zip"
+                    },
+                    "body": "UEsDBAABAgMEBQYHCAkKCwwNDg8QERITFBUWFxgZGhscHR4fICEiIyQlJicoKSorLC0uLzAxMjM0NTY3ODk6Ozw9Pj9AQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVpbXF1eX2BhYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ent8fX5/gIGCg4SFhoeIiYqLjI2Oj5CRkpOUlZaXmJmam5ydnp+goaKjpKWmp6ipqqusra6vsLGys7S1tre4ubq7vL2+v8DBwsPExcbHyMnKy8zNzs/Q0dLT1NXW19jZ2tvc3d7f4OHi4+Tl5ufo6err7O3u7/Dx8vP09fb3+Pn6+/z9/v8=",
+                    "bodyEncoding": "base64",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=2VSpgHTi7YutDMFU5SKKMKQEUpCxW5xHCR3orETzRYY="
+                }
+            ]
+        },
+        {
+            "name": "packages.artifacts.add",
+            "args": [
+                "acme/artifact",
+                "zip",
+                "application/zip",
+                "package1.zip"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/packages/acme%2Fartifact/artifacts/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/zip",
+                        "X-FILENAME": "package1.zip"
+                    },
+                    "body": "UEsDBAABAgMEBQYHCAkKCwwNDg8QERITFBUWFxgZGhscHR4fICEiIyQlJicoKSorLC0uLzAxMjM0NTY3ODk6Ozw9Pj9AQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVpbXF1eX2BhYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ent8fX5/gIGCg4SFhoeIiYqLjI2Oj5CRkpOUlZaXmJmam5ydnp+goaKjpKWmp6ipqqusra6vsLGys7S1tre4ubq7vL2+v8DBwsPExcbHyMnKy8zNzs/Q0dLT1NXW19jZ2tvc3d7f4OHi4+Tl5ufo6err7O3u7/Dx8vP09fb3+Pn6+/z9/v8=",
+                    "bodyEncoding": "base64",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=CmJUm+cTbCsDc3MeloqEr9K01yWsrwGWqX1wbNIVl9M="
+                }
+            ]
+        },
+        {
+            "name": "packages.artifacts.show",
+            "args": [
+                41
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/packages/artifacts/41/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=uO2EBkDxu0JpPraxFADuxCKArFoS7D8O06NuWucQ/HA="
+                }
+            ]
+        },
+        {
+            "name": "packages.artifacts.showPackageArtifacts",
+            "args": [
+                "acme/artifact"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/packages/acme%2Fartifact/artifacts/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=A9RopXKoyURWO/5c1ijyOamUXdVotReKI92A18HqtuM="
+                }
+            ]
+        },
+        {
+            "name": "credentials.all",
+            "args": [],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/credentials/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=rxsyNbxpLi6nJY9uc+iMZFhjfp5POTo1lHNvNI0pocw="
+                }
+            ]
+        },
+        {
+            "name": "credentials.show",
+            "args": [
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/credentials/42/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=btHgwBpEODdNtUtI6lyjrIELotYn0CaiLJT9igquflc="
+                }
+            ]
+        },
+        {
+            "name": "credentials.create",
+            "args": [
+                "ACME http auth",
+                "http-basic",
+                "acme-website.com",
+                "username",
+                "password"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/credentials/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"description\":\"ACME http auth\",\"type\":\"http-basic\",\"domain\":\"acme-website.com\",\"username\":\"username\",\"credential\":\"password\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=fAEB8cQYMD0d8xc5Yfgd9/k5fWzS9znR5pQWI0L8hZM="
+                }
+            ]
+        },
+        {
+            "name": "credentials.create",
+            "args": [
+                "GitHub token",
+                "github-oauth",
+                "github.com",
+                null,
+                "ghp_example"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/credentials/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"description\":\"GitHub token\",\"type\":\"github-oauth\",\"domain\":\"github.com\",\"username\":null,\"credential\":\"ghp_example\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=Ahtveh9oiauRdTKFrNFEuksbtVmhwZwq0kPXRxjLtto="
+                }
+            ]
+        },
+        {
+            "name": "credentials.edit",
+            "args": [
+                42,
+                "http-basic",
+                "username",
+                "new password"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/credentials/42/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"username\":\"username\",\"credential\":\"new password\",\"type\":\"http-basic\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=oNNpMoXmr1kEDfHclc8M5Ywi294JavST+9vZnx3T4V4="
+                }
+            ]
+        },
+        {
+            "name": "credentials.remove",
+            "args": [
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/credentials/42/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=246kyhtckFEPczWnsGR4OauAdwAJ0M24chYv6ODCC+s="
+                }
+            ]
+        },
+        {
+            "name": "mirroredRepositories.all",
+            "args": [],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/mirrored-repositories/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=XmRnMIjJwkNCBssk6rD5Oxn1hZyP0k/sPUWmfBHv/SM="
+                }
+            ]
+        },
+        {
+            "name": "mirroredRepositories.show",
+            "args": [
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/mirrored-repositories/42/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=ikqpfnx1AOyfxj3fqmx7aWiRhyKA6Zs9BXBIhcV7zgc="
+                }
+            ]
+        },
+        {
+            "name": "mirroredRepositories.create",
+            "args": [
+                "Mirrored Repository",
+                "https://composer.example.com",
+                "add_on_use",
+                543
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/mirrored-repositories/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"name\":\"Mirrored Repository\",\"url\":\"https:\\/\\/composer.example.com\",\"mirroringBehavior\":\"add_on_use\",\"credentials\":543}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=KxsOiO3wALT9yOqW3+z/tPc7aH0FD32L4zVivWK1dZc="
+                }
+            ]
+        },
+        {
+            "name": "mirroredRepositories.create",
+            "args": [
+                "Packagist",
+                "https://repo.packagist.org",
+                "add_all"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/mirrored-repositories/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"name\":\"Packagist\",\"url\":\"https:\\/\\/repo.packagist.org\",\"mirroringBehavior\":\"add_all\",\"credentials\":null}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=WMv//8LjInIJ4v35NWPZ9fBMEKFloShAWTemBlT/NT0="
+                }
+            ]
+        },
+        {
+            "name": "mirroredRepositories.edit",
+            "args": [
+                42,
+                "Mirrored Repository",
+                "https://composer.example.com",
+                "add_on_use",
+                543
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "PUT",
+                    "url": "https://packagist.com/api/mirrored-repositories/42/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"name\":\"Mirrored Repository\",\"url\":\"https:\\/\\/composer.example.com\",\"mirroringBehavior\":\"add_on_use\",\"credentials\":543}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=pLkt4/gIxMdpvXxdXxibmesHbcZYHIHAnilPto2IBFc="
+                }
+            ]
+        },
+        {
+            "name": "mirroredRepositories.remove",
+            "args": [
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/mirrored-repositories/42/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=GwxO79Q/6CNeZs662a0VR3Qubxr7iXh/Vg7EMIZilG0="
+                }
+            ]
+        },
+        {
+            "name": "mirroredRepositories.listPackages",
+            "args": [
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/mirrored-repositories/42/packages/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=OwgZWMxZZ5TznUOFrQcfj2mMsQoDT0h7pfWVqCKBDp8="
+                }
+            ]
+        },
+        {
+            "name": "mirroredRepositories.addPackages",
+            "args": [
+                42,
+                [
+                    "acme/cool-lib",
+                    "acme/other"
+                ]
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/mirrored-repositories/42/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "[\"acme\\/cool-lib\",\"acme\\/other\"]",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=/E5WQ014BnMl/x+IVm4LTn/gIfRSGrBnjYTScFFMHoQ="
+                }
+            ]
+        },
+        {
+            "name": "mirroredRepositories.removePackages",
+            "args": [
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "DELETE",
+                    "url": "https://packagist.com/api/mirrored-repositories/42/packages/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=ZJKFpJuBfqVvtq+Di1MQGMEZ5rXTD/OPhpZLXCjc+a0="
+                }
+            ]
+        },
+        {
+            "name": "synchronizations.all",
+            "args": [],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/synchronizations/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=iu24xHkPhGENbWb1VYT5lx9hXw6eY2aUCaZoSJoK7xg="
+                }
+            ]
+        },
+        {
+            "name": "jobs.show",
+            "args": [
+                "46bf13150a86fece079ca979cb8ef57c78773faa"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/jobs/46bf13150a86fece079ca979cb8ef57c78773faa",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=+WiVDwjGJF2H6/TzO6KCTAiw8PZucqz1sFwdn8NQyvE="
+                }
+            ]
+        },
+        {
+            "name": "securityIssues.all",
+            "args": [],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/security-issues/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=UzhSKeu4fujA8/HQgJ9CnzRA/lUHuJXgBFYpb8naQeA="
+                }
+            ]
+        },
+        {
+            "name": "securityIssues.all",
+            "args": [
+                {
+                    "security-issue-state": "open"
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/security-issues/?limit=500&security-issue-state=open",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=4DpJD8K4wS30JvW9lXObKWZYt4hc7VcyK5Wp/WJdC4g="
+                }
+            ]
+        },
+        {
+            "name": "securityIssues.show",
+            "args": [
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/security-issues/42",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=atFWd25cKWJMRmik0iZQGl0/3HCB+YVKvyobVq1qfOY="
+                }
+            ]
+        },
+        {
+            "name": "securityIssues.open",
+            "args": [
+                42
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/security-issues/42/open",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=VjGQVUtw7/MIvvWZ1l4/l5dbeRgC/H3ZtR4DoZD1rbo="
+                }
+            ]
+        },
+        {
+            "name": "securityIssues.close",
+            "args": [
+                42,
+                "not-affected"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/security-issues/42/close/not-affected",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=eSZFkYp6Umjt+wPSeJevOPUnscgb1P9WM5cnt8jTriw="
+                }
+            ]
+        },
+        {
+            "name": "projects.all",
+            "args": [],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/subrepositories/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=WfmSGlSdJvWPY8G8pO3HL58Uhb/JQCNcqp10NlcdQFE="
+                }
+            ]
+        },
+        {
+            "name": "projects.create",
+            "args": [
+                "New project"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [],
+            "requests": [
+                {
+                    "method": "POST",
+                    "url": "https://packagist.com/api/subrepositories/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "{\"name\":\"New project\"}",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=uqhCPhUQFI4fzmqseQr+v43vVlU2LQWn+LzAS0t9gBk="
+                }
+            ]
+        },
+        {
+            "name": "pagination.absoluteNext",
+            "args": [],
+            "baseUrl": "https://packagist.com",
+            "result": [
+                {
+                    "id": 1,
+                    "name": "acme/a"
+                },
+                {
+                    "id": 2,
+                    "name": "acme/b"
+                },
+                {
+                    "id": 3,
+                    "name": "acme/c"
+                }
+            ],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/packages/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=9IH7PCkVG+hTewvV50cijwUunpeEx1O+HO0OWWTn8rE="
+                },
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/packages/?page=2&limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=hqeWn1pa4vRDLIHrNE7OkqBETn1cWi2Y/RdBPtkqWdU="
+                },
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/packages/?page=3&limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=YLGMXIHTM5ovm/gWLOcS/YAxrI0G0O+ZbUhXSh18FrU="
+                }
+            ]
+        },
+        {
+            "name": "pagination.relativeNext",
+            "args": [],
+            "baseUrl": "https://packagist.com",
+            "result": [
+                {
+                    "id": 1
+                },
+                {
+                    "id": 2
+                }
+            ],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/customers/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=wkHuf1VqzpPC6zDEJZO6oLw5eXvLMrfAjLSn27wSOXE="
+                },
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/customers/?page=2&limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=5Z7ux7ehALVAXM9Lo2QIz7tnNNlK94EjBwKQIQc0itI="
+                }
+            ]
+        },
+        {
+            "name": "pagination.filtersKeptOnNext",
+            "args": [
+                {
+                    "security-issue-state": "open"
+                }
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": [
+                {
+                    "id": 10
+                },
+                {
+                    "id": 11
+                }
+            ],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/security-issues/?limit=500&security-issue-state=open",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=4DpJD8K4wS30JvW9lXObKWZYt4hc7VcyK5Wp/WJdC4g="
+                },
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/security-issues/?security-issue-state=open&page=2&limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=EFaBlyi5fNli/ew6ouKGK6WIRJM5ZGji9sPjlps3uiU="
+                }
+            ]
+        },
+        {
+            "name": "pagination.selfHosted",
+            "args": [],
+            "baseUrl": "https://packagist.example.com:8443",
+            "result": [
+                {
+                    "id": 1
+                },
+                {
+                    "id": 2
+                }
+            ],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.example.com:8443/api/teams/?limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=Up8LazpZ6lsZkYNTyJpxDfvXz+PZXSo5q0dSw9UVIsA="
+                },
+                {
+                    "method": "GET",
+                    "url": "https://packagist.example.com:8443/api/teams/?page=2&limit=500",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=Vf+C8ll5YwUPRbcdhQwL4NfuOvw56IjX6ArivcI/Fn0="
+                }
+            ]
+        },
+        {
+            "name": "selfHosted.show",
+            "args": [
+                "acme/package"
+            ],
+            "baseUrl": "https://packagist.example.com:8443",
+            "result": [],
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.example.com:8443/api/packages/acme%2Fpackage/",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=Dl5UDKR/ywOdWysBmw4Kl3Whcu/ZkrqBw6hVGcFsYkc="
+                }
+            ]
+        },
+        {
+            "name": "jobs.waitForJob",
+            "args": [
+                "46bf13150a86fece079ca979cb8ef57c78773faa"
+            ],
+            "baseUrl": "https://packagist.com",
+            "result": {
+                "id": "46bf13150a86fece079ca979cb8ef57c78773faa",
+                "status": "success",
+                "message": "done"
+            },
+            "requests": [
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/jobs/46bf13150a86fece079ca979cb8ef57c78773faa",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=+WiVDwjGJF2H6/TzO6KCTAiw8PZucqz1sFwdn8NQyvE="
+                },
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/jobs/46bf13150a86fece079ca979cb8ef57c78773faa",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=+WiVDwjGJF2H6/TzO6KCTAiw8PZucqz1sFwdn8NQyvE="
+                },
+                {
+                    "method": "GET",
+                    "url": "https://packagist.com/api/jobs/46bf13150a86fece079ca979cb8ef57c78773faa",
+                    "headers": {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    "body": "",
+                    "authorization": "PACKAGIST-HMAC-SHA256 Key=packagist_ack_ffce048835c6cdea47bcc4b73c79, Timestamp=1763020800, Cnonce=c5e1a5b2f0d94e7a8b3c6d1e2f4a5b6c7d8e9f01, Version=2, Signature=+WiVDwjGJF2H6/TzO6KCTAiw8PZucqz1sFwdn8NQyvE="
+                }
+            ]
+        }
+    ]
+}
